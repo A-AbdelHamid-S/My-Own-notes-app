@@ -6,6 +6,8 @@ let notes = document.querySelectorAll('.input-box');
 // console.log("🚀 ~ notes:", notes);
 
 
+
+
 createButton.addEventListener('click',  ()=> {
   let inputBox = document.createElement('p');
   let img = document.createElement('img');
@@ -21,15 +23,6 @@ createButton.addEventListener('click',  ()=> {
 
 
 });
-
-localStorage.setItem('notes', notesContainer.innerHTML);
-localStorage.setItem('notes', JSON.stringify(notes));
-const storedData = localStorage.getItem('notes');
-console.log("🚀 ~ storedData:", storedData)
-if(storedData){
-  const userData = JSON.parse(storedData)
-  console.log("🚀 ~ userData:", userData)
-}
 
 
 
